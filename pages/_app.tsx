@@ -15,55 +15,41 @@ import Script from "next/script";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-
-      <Script id="google-analytics" strategy="lazyOnload">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-                `}
-      </Script>
+   
       <NextSeo
-        title="Anurag | Frontend Developer"
-        titleTemplate="Anurag | Frontend Developer"
-        defaultTitle="Anurag | Frontend Developer"
-        description="Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!"
+        title="Okera Johnson | Fullstack Developer"
+        titleTemplate="Okera Johnson | Fullstack Developer"
+        defaultTitle="Okera Johnson | Fullstack Developer"
+        description="Hey! I'm Okera Johnson, A Fullstack Developer"
         openGraph={{
-          url: "https://www.anurag.tech/",
-          title: "Anurag | Frontend Developer",
+          url: "https://www.Okera.digital/",
+          title: "Okera Johnson | Fullstack Developer",
           description:
-            "Hey! I'm Anurag, A Frontend Developer, Blogger and a Student!",
+            "Hey! I'm Okera Johnson, A Fullstack Developer",
           images: [
             {
-              url: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1643532760/og-image_dwcwhp.png",
+              url: "https://avatars.githubusercontent.com/u/16062726?v=4",
               width: 800,
               height: 420,
-              alt: "Anurag | Frontend Developer",
+              alt: "Okera Johnson | Fullstack Developer",
             },
           ],
         }}
         twitter={{
-          handle: "@kr_anurag_",
-          site: "@kr_anurag_",
+          handle: "@kr_Okera Johnson_",
+          site: "@kr_Okera Johnson_",
           cardType: "summary_large_image",
         }}
         additionalMetaTags={[
           {
             property: "keywords",
             content:
-              "Frontend Developer, anurag, anuragkr, Web Developer, web development, web developer, blogger, tech enthusiast, open source",
+              "Fullstack Developer, Okera Johnson, Okera Johnson, Web Developer, web development, web developer, blogger, tech enthusiast, open source",
           },
         ]}
       />
       <Head>
-        <link rel="icon" type="image/png" href="/assests/avatar.png" />
+        <link rel="icon" type="image/jpeg" href="/assests/avatar.jpeg" />
       </Head>
       <Component {...pageProps} />
     </>

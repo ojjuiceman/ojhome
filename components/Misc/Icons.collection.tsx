@@ -6,7 +6,6 @@ import { FaDiscord } from "react-icons/fa";
 import { VscGithubAlt } from "react-icons/vsc";
 
 export {
-  BsSpotify,
   MdEmail,
   AiOutlineTwitter,
   AiOutlineGithub,
